@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+
+  <title>IEEE-754 Binary-32 floating-point converter</title>
+  <link rel = "stylesheet" href = "index.css">
 </head>
 <body>
-<h1>Hello World</h1>
+  <h1>IEEE-754 Binary-32 floating-point converter (including all special cases)</h1>
+  <button> <a href="calc.html">simple calculator</a> </button>
+  <br><br>
 
+  <input id = "display" value = "input">
+  <input id = "output" value = "output">
+  <button id = "convert-button" onclick = "convert()">Convert</button>
+  <br><br>
+  IEEE-754 Binary-32 floating-point converter (including all special cases) <br>
+  <br>Input: 
+  <ul>
+    <li>  mantissa and base-2 (i.e., 101.01x2⁵),</li>  
+    <li>  decimal mantissa and base-10 (i.e.,15.75x10⁵) and NaN</li>
+  </ul>
+  
+  <br>Output: 
+  <ol>
+    <li>  binary output with space between sections </li>
+    <li>  it's hexadecimal equivalent </li>
+    <li>  with an option to output in a text file </li>
+  </ol>
+  
+  <script src = "index.js"></script>
 </body>
 </html>
