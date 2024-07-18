@@ -10,8 +10,8 @@
   <button> <a href="calc.html">simple calculator</a> </button>
   <br><br>
 
-  <input id = "display" value = "input">
-  <input id = "output" value = "output">
+  <input id = "display" placeholder = "input" autofocus>
+  <input id = "output" placeholder = "output" readonly>
   <button id = "convert-button" onclick = "convert()">Convert</button>
   <br><br>
   IEEE-754 Binary-32 floating-point converter (including all special cases) <br>
@@ -27,6 +27,20 @@
     <li>  it's hexadecimal equivalent </li>
     <li>  with an option to output in a text file </li>
   </ol>
+
+
+  what is your password?<br>
+  password: <br>
+  <input type="range" min="0" max="999999" value="50" id="myRange">
+  <span id="rangeValue"></span>
+  <script>
+    const rangeInput = document.getElementById("myRange");
+    const valueDisplay = document.getElementById("rangeValue");
+
+    rangeInput.oninput = function() {
+      valueDisplay.textContent = rangeInput.value;
+    }
+  </script>
   
   <script src = "index.js"></script>
 </body>
