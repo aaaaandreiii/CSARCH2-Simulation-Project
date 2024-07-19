@@ -25,8 +25,11 @@ function calculate() {
     // Replace all occurrences of minus symbol () with dash sign
     expression = display.value.replace(/\−/g, "-");
 
-    // Replace all occurrences of multiplication symbol asterisk symbol
+    // Replace all occurrences of multiplication symbol to asterisk symbol
     expression = expression.replace(/\×/g, "*");
+
+    // Replace all occurrences of x character to asterisk symbol
+    expression = expression.replace(/\x/g, "*");
 
     // Replace all occurrences of division symbol with forward slash
     expression = expression.replace(/\÷/g, "/");
