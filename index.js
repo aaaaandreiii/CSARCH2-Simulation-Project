@@ -1,5 +1,12 @@
 const input = document.getElementById("input");
 const ouput = document.getElementById("output");
+const button = document.getElementById("convert-button");
+
+input.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        button.click();
+    }
+});
 
 function convert(){
     var text = input.value;
@@ -12,13 +19,16 @@ function convert(){
         
         //convert to binary
         const patterns = [/(\d+)\.(\d+)x(\d+)\^(\d+)/, /\+(\d+)\.(\d+)x(\d+)\^(\d+)/, /\-(\d+)\.(\d+)x(\d+)\^(\d+)/];
-        
-        for (let pattern of patterns) {
+        var i;
+
+        for (i = 0; i < 3; i++){
+            let pattern = patterns[i];
             const match = pattern.exec(text);
+            
             if (match) {
-                // if (match3) {
-                //     alert("negative");
-                // }
+                if (i == 1) {
+                    alert("negative");
+                }
                 var sign = document.getElementById("sign");
                 var eprime = document.getElementById("eprime");
                 var mantissa = document.getElementById("mantissa");
@@ -31,7 +41,7 @@ function convert(){
                     afterRadixPoint.textContent = groups[1];
                 } else if (groups[2] != 2) {
                     let decimalNumber = Number(groups[0]);
-                    let binaryNumber = decimalNumber.toString(2);
+                    let binaryNumber = decimalNumber.toString(2);   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString#:~:text=optional%20radix%20parameter
                     alert(binaryNumber / Number(11).toString(2));
                     beforeRadixPoint.textContent = binaryNumber;
                     afterRadixPoint.textContent = groups[1];
