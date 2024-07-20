@@ -24,14 +24,18 @@ function convert(){
         for (i = 0; i < 3; i++){
             let pattern = patterns[i];
             const match = pattern.exec(text);
+
+            //if 101.01x2^5
+            // groups[0] = 101
+            // groups[1] = 01
+            // groups[2] = 2
+            // groups[3] = 5
             
             if (match) {
-                if (i == 1) {
-                    alert("negative");
-                }
                 var sign = document.getElementById("sign");
                 var eprime = document.getElementById("eprime");
                 var mantissa = document.getElementById("mantissa");
+                var hex = document.getElementById("hex");
                 
                 const groups = match.slice(1); // Get captured groups (excluding whole match)
                 
@@ -39,9 +43,14 @@ function convert(){
                 if (groups[2] == 2){
                     beforeRadixPoint.textContent = groups[0];
                     afterRadixPoint.textContent = groups[1];
+                    //test lang if binary arithmetic works
+                    let binaryNumber = groups[0];
+                    alert(binaryNumber / Number(2).toString(2));
+                        //AND IT DOES WOOO
+                        //this makes our lives so much easier
                 } else if (groups[2] != 2) {
                     let decimalNumber = Number(groups[0]);
-                    let binaryNumber = decimalNumber.toString(2);   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString#:~:text=optional%20radix%20parameter
+                    let binaryNumber = decimalNumber.toString(2);  //toString parameter for radix
                     alert(binaryNumber / Number(11).toString(2));
                     beforeRadixPoint.textContent = binaryNumber;
                     afterRadixPoint.textContent = groups[1];
