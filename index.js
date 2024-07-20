@@ -8,6 +8,10 @@ input.addEventListener('keydown', function(event) {
     }
 });
 
+// my test cases are
+    //123.45x678^910
+    //-101.01x2^5
+
 function convert(){
     var text = input.value;
     var beforeRadixPoint = document.getElementById("beforeRadixPoint");
@@ -39,6 +43,11 @@ function convert(){
                 
                 const groups = match.slice(1); // Get captured groups (excluding whole match)
                 
+                if (i == 0 || i == 1){
+                    sign.textContent = "0";
+                } else {
+                    sign.textContent = "1";
+                }
                 // Update the label text
                 if (groups[2] == 2){
                     beforeRadixPoint.textContent = groups[0];
@@ -51,8 +60,8 @@ function convert(){
                 } else if (groups[2] != 2) {
                     let decimalNumber = Number(groups[0]);
                     let binaryNumber = decimalNumber.toString(2);  //toString parameter for radix
-                    alert(binaryNumber / Number(11).toString(2));
-                    beforeRadixPoint.textContent = binaryNumber;
+                    // alert(binaryNumber / Number(11).toString(2));
+                    // beforeRadixPoint.textContent = binaryNumber;
                     afterRadixPoint.textContent = groups[1];
                 }
                 
