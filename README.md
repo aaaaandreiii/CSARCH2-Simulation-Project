@@ -1,5 +1,17 @@
 # CSARCH2-Simulation-Project
-# IEEE-754 Binary-32 Floating-Point Converter
+## IEEE-754 Binary-32 Floating-Point Converter
+### Contents of this project
+
+1. Source Code
+    - [Contribution guidelines for this project](docs/CONTRIBUTING.md)
+2. Video Demonstration
+    - [Video Demo](https://drive.google.com/file/d/1mSGdYKpHMkBCCt-zeIa0sVZg9inRjW0q/view?usp=drive_link).
+3. Documentation of Test Cases
+    - [Screenshots of Test Cases](Documentation.pdf)
+5. Technical Analysis Write-Up
+    - [Analysis Document](Analysis-Write-Up.pdf)
+6. Website Actual
+    - [IEEE-754 Binary-32 Floating-Point Converter](https://aaaaandreiii.github.io/CSARCH2-Simulation-Project/)
 
 ## Description
 The IEEE-754 Binary-32 Floating-Point Converter is a web-based application designed to facilitate the conversion of floating-point numbers between binary and decimal representations according to the IEEE-754 standard. This tool supports conversion of regular numbers as well as special values like NaN (Not a Number), Infinity, and Zero. 
