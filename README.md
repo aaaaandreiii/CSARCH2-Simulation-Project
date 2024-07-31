@@ -6,13 +6,13 @@ The IEEE-754 Binary-32 Floating-Point Converter is a web-based application desig
 ## Contents of this project
 
 1. Source Code
-    - [Webpage Code](index.html)
+    - [Webpage Code](Source-Code)
 2. Video Demonstration
     - [Video Demo](https://drive.google.com/file/d/1mSGdYKpHMkBCCt-zeIa0sVZg9inRjW0q/view?usp=drive_link).
 3. Documentation of Test Cases
     - [Screenshots of Test Cases](Documentation.pdf)
 5. Technical Analysis Write-Up
-    - [Analysis Document](Analysis-Write-Up.pdf)
+    - [Analysis Document](Documentation/Analysis-Write-Up.pdf)
 6. Website Actual
     - [IEEE-754 Binary-32 Floating-Point Converter](https://aaaaandreiii.github.io/CSARCH2-Simulation-Project/)
 
