@@ -30,13 +30,13 @@ The IEEE-754 Binary-32 Floating-Point Converter is a web-based application desig
 
 6. **Download Output**: Click the "Download Output" button to save the conversion results to a text file.
 
-### Features
+## Features
 - **Input Validation**: Ensures that the inputs are correctly formatted and within acceptable ranges.
 - **Special Values Handling**: Supports special IEEE-754 values like sNaN, qNaN, Infinity, and Zero.
 - **Output Formats**: Provides both binary and hexadecimal outputs, formatted for readability.
 - **Downloadable Results**: Users can download the conversion results as a text file.
 
-### Special Values Instructions
+## Special Values Instructions
 - **Signaling NaN**: Enter `sNaN`
 - **Quiet NaN**: Enter `qNaN`
 - **Positive Infinity**: Enter `Infinity`
@@ -44,7 +44,7 @@ The IEEE-754 Binary-32 Floating-Point Converter is a web-based application desig
 - **Negative Zero**: Enter `-0`
 - **Positive Zero**: Enter `0`
 
-### [Example Outputs](Documentation.pdf)
+## [Example Outputs](Documentation.pdf)
 - **Binary Output**: Displayed with spaces between the sign bit, exponent, and mantissa for clarity.
 - **Hexadecimal Output**: Direct conversion of the binary representation.
 
@@ -54,7 +54,7 @@ The IEEE-754 Binary-32 Floating-Point Converter is a web-based application desig
 - **index.js**: JavaScript file implementing the logic for conversion, input validation, and special values handling.
 - **README.md**: Documentation and usage instructions for the converter.
 
-### Contributors
+## Contributors
 - Andrei Balingit
 - Maria Sarah Althea Mata
 - Arianne Ranada
